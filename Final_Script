@@ -1,0 +1,39 @@
+
+amts=[]
+descs=[]
+money=float(input("Enter the bugget\n"))
+while True:
+    c=(int(input("\nWhat woud you like to do?\n1.Add an expense\n2.Show detailed bugget report\n3.Change product ammount\n4.Exit\n")))
+    if c==1:
+        desc=input("Enter the product description: ")
+        descs.append(desc)
+        amt=float(input("Enter the product amount: "))
+        amts.append(amt)
+        total=sum(amts)
+        rem=money-total
+        if rem>0:
+            print(f"\nThe remaing bugget is Rs {rem}")
+        else:
+            
+            print(f"\nThe bugget has exceded by Rs {abs(rem)}")
+        
+    elif c==2:
+        print(f"{descs} cost {amts}")
+        total=sum(amts)
+        print(f"The sum is Rs {total}")
+        rem=money-total
+        if rem>0:
+            print(f"The remaing bugget is Rs {rem}")
+        else:
+            
+            print(f"The bugget has exceded by Rs {abs(rem)}")
+
+    elif c==3:
+        x=input("Enter the product description\n")
+        new=float(input("Enter the new ammount\n"))
+        indi=descs.index(x)
+        amts[indi]= new
+
+    elif c==4:
+        print("\nThankyou!\n")
+        break
