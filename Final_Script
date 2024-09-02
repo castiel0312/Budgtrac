@@ -1,9 +1,9 @@
 
 amts=[]
 descs=[]
-money=float(input("Enter the bugget\n"))
+money=float(input("Enter the budget\n"))
 while True:
-    c=(int(input("\nWhat woud you like to do?\n1.Add an expense\n2.Show detailed bugget report\n3.Change product ammount\n4.Exit\n")))
+    c=(int(input("\nWhat woud you like to do?\n1.Add an expense\n2.Show detailed budget report\n3.Change product ammount\n4.Exit\n")))
     if c==1:
         desc=input("Enter the product description: ")
         descs.append(desc)
