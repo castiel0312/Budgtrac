@@ -12,10 +12,10 @@ while True:
         total=sum(amts)
         rem=money-total
         if rem>0:
-            print(f"\nThe remaing bugget is Rs {rem}")
+            print(f"\nThe remaing budget is Rs {rem}")
         else:
             
-            print(f"\nThe bugget has exceded by Rs {abs(rem)}")
+            print(f"\nThe budget has exceded by Rs {abs(rem)}")
         
     elif c==2:
         print(f"{descs} cost {amts}")
@@ -23,10 +23,10 @@ while True:
         print(f"The sum is Rs {total}")
         rem=money-total
         if rem>0:
-            print(f"The remaing bugget is Rs {rem}")
+            print(f"The remaing budget is Rs {rem}")
         else:
             
-            print(f"The bugget has exceded by Rs {abs(rem)}")
+            print(f"The budget has exceded by Rs {abs(rem)}")
 
     elif c==3:
         x=input("Enter the product description\n")
