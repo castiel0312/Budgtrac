@@ -1,4 +1,3 @@
-
 amts=[]
 descs=[]
 money=float(input("Enter the budget\n"))
